@@ -8,10 +8,10 @@ WORKDIR /app
 COPY . /app
 
 # Install any needed packages specified in requirements.txt
-RUN pip install --no-cache-dir flask
+RUN pip install flask
 
 # Make port 5000 available to the world outside this container
-EXPOSE 5000
+EXPOSE 6006
 
 # Run app.py when the container launches
 CMD ["python", "app.py"]

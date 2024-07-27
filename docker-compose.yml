@@ -4,4 +4,4 @@ services:
   web:
     build: .
     ports:
-      - "6006:5000"
+      - "6006:6006"

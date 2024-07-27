@@ -10,8 +10,8 @@
 -
 - `minikube start`
 - `eval $(minikube docker-env)`
-- `docker build -t fimage:latest .`
+- `docker build -t flaskimage:latest .`
 - `kubectl apply -f flask-app-deployment.yaml`
 - `kubectl get services`
-- `minikube tunnel` 
+- `minikube tunnel --cleanup` 
  
