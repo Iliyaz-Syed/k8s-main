@@ -10,11 +10,11 @@
 -
 - `sudo su`
 - `minikube start --force`
-- `eval $(minikube docker-env)`
-- `docker build -t flaskimage:latest .`
 - `curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"`
 - `chmod +x ./kubectl`
 - `mv ./kubectl /usr/local/bin/kubectl`
+- `eval $(minikube docker-env)`
+- `docker build -t flaskimage:latest .`
 - `kubectl apply -f flask-app-deployment.yaml`
 - `kubectl get services`
 - `sudo apt update`
