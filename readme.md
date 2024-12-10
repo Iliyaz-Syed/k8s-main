@@ -22,10 +22,10 @@
 - `sudo vim /etc/nginx/sites-available/default`
 - ```
   server {
-    -listen 80;
-    -server_name 13.233.212.12;
+    listen 80;
+    server_name 13.233.212.12;
 
-    -location / {
+    location / {
         proxy_pass http://192.168.49.2:32077;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
