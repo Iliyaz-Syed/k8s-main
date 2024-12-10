@@ -23,7 +23,8 @@
 - ```
   server {
     listen 80;
-    server_name 13.233.212.12;
+    server_name <YOUR_PUBLIC_IP>;
+    # Example server_name 13.233.212.12;
 
     location / {
         proxy_pass http://192.168.49.2:32077;
@@ -31,8 +32,8 @@
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     }
-}
-``
+  }
+
 - `sudo systemctl restart nginx`
 - Goto Your `Public IP Address of your Instance`
 
