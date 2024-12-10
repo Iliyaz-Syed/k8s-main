@@ -9,7 +9,7 @@
 **Running flask through k8s**
 -
 - `sudo minikube start --force`
-- `eval $(minikube docker-env)`
+- `eval $(sudo minikube docker-env)`
 - `docker build -t flaskimage:latest .`
 - `kubectl apply -f flask-app-deployment.yaml`
 - `kubectl get services`
